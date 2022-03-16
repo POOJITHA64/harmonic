@@ -1,14 +1,11 @@
-#harmonic
-print("Enter values in an array")
-x<- scan()
+x<-c(6,8,9,10,50,16)
 n<-length(x)
-sum<-0
+n<-scan()
+k=1
 for(i in 1:n)
-  {
-    sum=sum+(1/x[i])
-  }
-  hm<-n/sum
-print("Harmonic mean of the given values")
-print(hm)
-print("Harmonic mean value using built in function")
-print(n/sum((1/x)))
+{
+  k=k+(1/x[i])
+}
+hm=n/k
+sprintf("harmonic mean %f",hm)
+
